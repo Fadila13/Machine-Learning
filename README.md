@@ -4,42 +4,42 @@ Prediksi konsumsi energi yang memperhitungkan berbagai faktor seperti suhu, kele
 Variasi dalam faktor-faktor ini dapat signifikan memengaruhi konsumsi energi, seperti suhu dan kelembaban yang mempengaruhi penggunaan HVAC dan pencahayaan, serta luas bangunan yang mempengaruhi kebutuhan energi secara keseluruhan [[3](https://jurnal.untan.ac.id/index.php/Elkha/article/download/3002/2961)] [[4](https://id.wikihow.com/Mencari-Luas))]. Selain itu, faktor-faktor seperti tingkat hunian, penggunaan energi terbarukan, hari dalam seminggu, dan hari libur juga berkontribusi pada fluktuasi dalam konsumsi energi [[5](https://publication.petra.ac.id/index.php/acesa/article/download/13450/11654)] [[6](https://scholarhub.ui.ac.id/cgi/viewcontent.cgi?article=1301&context=jepi)]. Oleh karena itu, dengan mempertimbangkan semua faktor ini yang juga tersedia pada *dataset*, dapat membantu untuk merencanakan penggunaan energi yang lebih efisien dan berkelanjutan dari melihat seberapa besar korelasi pengaruh faktor-faktor tersebut. 
 Dalam membuat model regresi ada banyak cara algoritma yang bisa dipilih. Salah satu algoritma yang paling umum digunakan adalah regresi. Dengan menggunakan regresi dan memasukkan faktor-faktor dari rumah yang dituju diharapkan dapat memprediksi harga rumah yang dimaksud [[6](https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/download/2403/897/17458)] [[7](https://journal.eng.unila.ac.id/index.php/jitet/article/download/237/228)] [[8](https://ejournal.itn.ac.id/index.php/jati/article/download/8083/4796/)] [[9](https://ejurnal.its.ac.id/index.php/teknik/article/view/92329)] [[10](https://elektroda.uho.ac.id/index.php/journal/article/download/95/37)] [[11](https://jom.untidar.ac.id/index.php/dinamic/article/download/1428/669)].
 ## Business Understanding
-Pengembangan model prediksi harga rumah memiliki potensi dampak atau manfaat berupa menjadi salah satu alat bantu dalam pengambilan keputusan oleh calon pembeli rumah.
-Contoh potensi manfaat dari hasil prediksi harga rumah yang akurat adalah membantu pembeli dan penjual membuat keputusan jual ataupu beli yang lebih bijaksana.
+Prediksi konsumsi energi menjadi proses penting dalam berbagai industri dan sektor, termasuk manufaktur, transportasi, dan bangunan. Dalam hal ini pola konsumsi energi membantu untuk merencanakan penggunaan energi yang efisien, mengoptimalkan biaya operasional, dan mengurangi dampak lingkungan.
 ### Problem Statements
-- Berdasarkan eksplorasi *dataset*, fitur apa saja yang mempengaruhi dalam menentukan estimasi harga rumah?
-- Bagaimana mengolah *dataset* agar dapat dibuat model prediksi harga rumah?
-- Bagaimanna cara meningkatkan nilai perfoma model prediksi harga rumah?
+- Berdasarkan eksplorasi *dataset*, fitur apa saja yang mempengaruhi dalam menentukan prediksi harga rumah?
+- Bagaimana mengolah *dataset* agar dapat dibuat model prediksi konsumsi energi?
+- Bagaimanna cara meningkatkan nilai perfoma model prediksi konsumsi energi?
 ### Goals
-- Mengeksplorasi semua fitur yang tersedia pada *dataset* kemudian membuat melihat korelasi harga dari semua fitur yang sedia untuk melihat faktor apa saja yang paling berpengaruh sampai paling kurang berpengaruh terhadap harga rumah
-- Melakukan proses *data wragling* dan *data preparation* terhadap *dataset* agar dapat dibuat model predksi harga rumah
-- Melakukan beberapa variasi model untuk mendapatkan model yang paling baik dari beberapa model yang telah dibuat untuk prediksi harga rumah
+- Mengeksplorasi semua fitur yang tersedia pada *dataset* kemudian membuat melihat korelasi konsumsi dari semua fitur yang sedia untuk melihat faktor apa saja yang paling berpengaruh sampai paling kurang berpengaruh terhadap konsumsi energi
+- Melakukan proses *data wragling* dan *data preparation* terhadap *dataset* agar dapat dibuat model predksi konsumsi energi
+- Melakukan beberapa variasi model untuk mendapatkan model yang paling baik dari beberapa model yang telah dibuat untuk prediksi konsumsi energi
 ### Solution statements
 - Untuk eksplorasi fitur dilakukan Analisis Univariat dan Analisis Multivariat. Analisis Univariat dilakukan untuk mengeksploasi data numerik dan data kategorik. Analisis Multivariat dilakukan untuk melihat hubungan antar fitur. Teknik yang digunakan adalah menggunakan catplot, pairplot, dan heatmap untuk melihat *Correlation Matrix* dari fitur-fitur yang dimiliki.
 - Agar didapatkan model prediksi yang baik maka dilakukan proses *Data Wragling* yang meliputi *Data Gathering*, *Data Assessing*, dan *Data Cleaning*.
 - Untuk mengetahui perfoma model dilakukan pengecekan performa dengan metrik evaluasi.
 ## Data Understanding
-Data yang digunakan dalam pembuatan model merupakan data sekunder. Data diambil dari Kaggle dengan nama *dataset* yaitu *California House Price*. 
+Data yang digunakan dalam pembuatan model merupakan data sekunder. Data diambil dari Kaggle dengan nama *dataset* yaitu *Energy-consumption-prediction*. 
 
-URL: https://www.kaggle.com/*dataset*s/shibumohapatra/house-price
-URL: https://www.kaggle.com/datasets/shibumohapatra/house-price
+URL: https://www.kaggle.com/*dataset*s/mrsimple07/energy-consumption-prediction/data 
+URL: https://www.kaggle.com/datasets/mrsimple07/energy-consumption-prediction/data 
 
 Berikut merupakan detail dari *dataset* yang digunakan untuk pembuatan model:
 - Dataset berupa CSV
-- Dataset terdiri dari 20640 *records* dengan 10 buah fitur yang diukur.
-- Dataset terdiri dari 1 data kategori dan 9 data numerik.
-- Dataset memiliki *missing value* sejumlah 205 records
+- Dataset terdiri dari 1001 *records* dengan 11 buah fitur yang diukur.
+- Dataset terdiri dari 4 data kategori dan 7 data numerik.
+- Dataset memiliki *missing value* sejumlah 0 records
 ### Variabel-variabel pada *dataset* adalah sebagai berikut:
-- longitude : koordinat geografis yang digunakan untuk menunjukkan posisi suatu titik dari arah utara ke selatan yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
-- latitude : koordinat geografis yang digunakan untuk menunjukkan posisi suatu titik dari arah timur ke barat yang digunakan menentukan posisi suatu titik pada permukaan bumi (diukur dalam satuan derajat)
-- housing_median_age : usia rata-rata sebuah rumah dalam satu blok. angka yang lebih rendah menunjukkan bangunan yang lebih baru (dalam satuan tahun)
-- total_rooms : Jumlah total kamar dalam satu blok (dalam satuan buah)
-- total_bedrooms : jumlah total kamar tidur dalam satu blok (dalam satuan buah)
-- population : jumlah total orang yang tinggal dalam satu blok (dalam satuan orang)
-- households : jumlah total rumah tangga, sekelompok orang yang tinggal di dalam satu unit rumah, untuk satu blok (dalam satuan orang)
-- median_income : pmedian endapatan untuk rumah tangga dalam satu blok rumah (diukur dalam Dolar AS)
-- ocean_proximity : posisi relatif lokasi rumah terhadap lautan/laut (berupa kategori 'NEAR BAY', '<1H OCEAN', 'INLAND', 'NEAR OCEAN', 'ISLAND')
-- median_house_value : median harga rumah untuk rumah tangga dalam satu blok (diukur dalam Dolar AS)
+- Timestamp : Waktu tertentu saat pengukuran dilakukan, biasanya dalam format tanggal dan jam untuk merekam kondisi pada saat itu digunakan untuk Berguna untuk memahami pola penggunaan energi sepanjang waktu dan memprediksi kebutuhan energi di masa depan (diukur dalam satuan detik)
+- Temperature : Suhu udara di lingkungan digunakan untuk memengaruhi kebutuhan pemanasan atau pendinginan, yang pada gilirannya mempengaruhi konsumsi energi HVAC (diukur dalam satuan angka)
+- Humidity : Kadar kelembaban udara, merupakan persentase dari kandungan uap air di udara. Berpengaruh pada kenyamanan termal dan kualitas udara dalam ruangan. (dalam satuan angka)
+- Square Foot age : Luas area bangunan atau ruangan, digunakan untuk menentukan ukuran ruangan yang mempengaruhi kebutuhan energi untuk pemanasan, pendinginan, dan pencahayaan (dalam satuan )
+- Occupancy : Jumlah orang yang hadir atau menggunakan bangunan pada waktu tertentu digunakan untuk menggambarkan beban internal yang mempengaruhi suhu dan kebutuhan ventilasi (dalam satuan buah)
+- HVAC Usage : Penggunaan sistem HVAC (Heating, Ventilation, and Air Conditioning), mengindikasikan seberapa sering sistem tersebut digunakan digunakan untuk menunjukkan tingkat penggunaan energi untuk pendinginan atau pemanasan ruangan (dalam satuan orang)
+- Lighting Usage : Penggunaan pencahayaan di dalam bangunan, dapat diukur dalam waktu penggunaan atau intensitas cahaya yang digunakan untuk memengaruhi konsumsi energi untuk pencahayaan ruangan (dalam satuan orang)
+- Renewable Energy : Energi yang dihasilkan dari sumber-sumber yang dapat diperbaharui, seperti tenaga surya atau angin digunakan untuk memberikan alternatif energi yang ramah lingkungan dan dapat mengurangi konsumsi energi dari sumber-sumber konvensional (diukur dalam Dolar AS)
+- Day Of Week : Hari dalam seminggu, dimulai dari Minggu hingga Sabtu (Pola konsumsi energi dapat bervariasi berdasarkan hari dalam seminggu). (berupa kategori 'NEAR BAY', '<1H OCEAN', 'INLAND', 'NEAR OCEAN', 'ISLAND')
+- Holiday : Hari libur atau hari khusus di mana aktivitas mungkin berbeda dari hari biasa digunakan untuk memengaruhi pola konsumsi energi karena perubahan dalam aktivitas dan kehadiran (diukur dalam Dolar AS)
+- EnergyConsumption : Jumlah energi yang dikonsumsi oleh bangunan atau sistem pada waktu tertentu, yang digunakan untuk interaksi antara faktor-faktor di atas yang dapat diprediksi untuk perencanaan energi yang lebih efisien (
 Untuk memahami data lebih lanjut, dilakukan Analisis Univariat dan Analisis Multivariat, serta Visualisasi Data
 Analisis Univariat merupakan bentuk analisis data yang hanya merepresentasikan informasi yang terdapat pada satu variabel.  Jenis visualisasi ini umumnya digunakan untuk memberikan gambaran terkait distribusi sebuah variabel dalam suatu *dataset*. Sedangkan, Analisis Multivariat tmerupakan jenis analisis data yang terdapat dalam lebih dari dua variabel. Jenis visualisasi ini digunakan untuk merepresentasikan hubungan dan pola yang terdapat dalam multidimensional data. 
 Selain melalui analisis, dilakukan juga Visualisasi Data. Memvisualisasikan data memberikan wawasan mendalam tentang perilaku berbagai fitur-fitur yang tersedia dalam *dataset*. 
