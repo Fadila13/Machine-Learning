@@ -20,7 +20,7 @@ Prediksi konsumsi energi menjadi proses penting dalam berbagai industri dan sekt
 ## Data Understanding
 Data yang digunakan dalam pembuatan model merupakan data sekunder. Data diambil dari Kaggle dengan nama *dataset* yaitu *Energy-consumption-prediction*. 
 
-URL: https://www.kaggle.com/*dataset*s/mrsimple07/energy-consumption-prediction/data 
+URL: https://www.kaggle.com/*dataset*s/mrsimple07/energy-consumption-prediction/data
 
 URL: https://www.kaggle.com/datasets/mrsimple07/energy-consumption-prediction/data 
 
@@ -41,7 +41,8 @@ Berikut merupakan detail dari *dataset* yang digunakan untuk pembuatan model:
 - Day Of Week : Hari dalam seminggu, dimulai dari Minggu hingga Sabtu (Pola konsumsi energi dapat bervariasi berdasarkan hari dalam seminggu berupa kategori 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu')
 - Holiday : Hari libur atau hari khusus di mana aktivitas mungkin berbeda dari hari biasa digunakan untuk memengaruhi pola konsumsi energi karena perubahan dalam aktivitas dan kehadiran (berupa kategori 'Yes', 'No')
 - EnergyConsumption : Jumlah energi yang dikonsumsi oleh bangunan atau sistem pada waktu tertentu, yang digunakan untuk interaksi antara faktor-faktor di atas yang dapat diprediksi untuk perencanaan energi yang lebih efisien (dalam satuan energi)
-Untuk memahami data lebih lanjut, dilakukan Analisis Univariat dan Analisis Multivariat, serta Visualisasi Data
+
+Untuk memahami data lebih lanjut, dilakukan Analisis Univariat dan Analisis Multivariat, serta Visualisasi Data.
 Analisis Univariat merupakan bentuk analisis data yang hanya merepresentasikan informasi yang terdapat pada satu variabel.  Jenis visualisasi ini umumnya digunakan untuk memberikan gambaran terkait distribusi sebuah variabel dalam suatu *dataset*. Sedangkan, Analisis Multivariat tmerupakan jenis analisis data yang terdapat dalam lebih dari dua variabel. Jenis visualisasi ini digunakan untuk merepresentasikan hubungan dan pola yang terdapat dalam multidimensional data. 
 Selain melalui analisis, dilakukan juga Visualisasi Data. Memvisualisasikan data memberikan wawasan mendalam tentang perilaku berbagai fitur-fitur yang tersedia dalam *dataset*. 
 Teknik visualisasi yang digunakan pada pembuatan model proyek ini adalah dengan menggunakan catplot yang digunakan untuk memplot distribusi data pada data kategori, pairplot yang digunakan untuk melakukan hubungan antar fitur dalam *dataset*, dan heatmap yang menampilkan korelasi antar fitur yang ada dalam *dataset* dalam bentuk matriks.
