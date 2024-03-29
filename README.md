@@ -6,7 +6,7 @@ Dalam membuat model regresi ada banyak cara algoritma yang bisa dipilih. Salah s
 ## Business Understanding
 Prediksi konsumsi energi menjadi proses penting dalam berbagai industri dan sektor, termasuk manufaktur, transportasi, dan bangunan. Dalam hal ini pola konsumsi energi membantu untuk merencanakan penggunaan energi yang efisien, mengoptimalkan biaya operasional, dan mengurangi dampak lingkungan.
 ### Problem Statements
-- Berdasarkan eksplorasi *dataset*, fitur apa saja yang mempengaruhi dalam menentukan prediksi harga rumah?
+- Berdasarkan eksplorasi *dataset*, fitur apa saja yang mempengaruhi dalam menentukan prediksi konsumsi energi?
 - Bagaimana mengolah *dataset* agar dapat dibuat model prediksi konsumsi energi?
 - Bagaimanna cara meningkatkan nilai perfoma model prediksi konsumsi energi?
 ### Goals
@@ -21,6 +21,7 @@ Prediksi konsumsi energi menjadi proses penting dalam berbagai industri dan sekt
 Data yang digunakan dalam pembuatan model merupakan data sekunder. Data diambil dari Kaggle dengan nama *dataset* yaitu *Energy-consumption-prediction*. 
 
 URL: https://www.kaggle.com/*dataset*s/mrsimple07/energy-consumption-prediction/data 
+
 URL: https://www.kaggle.com/datasets/mrsimple07/energy-consumption-prediction/data 
 
 Berikut merupakan detail dari *dataset* yang digunakan untuk pembuatan model:
