@@ -4,9 +4,9 @@
 
 Prediksi konsumsi energi yang memperhitungkan berbagai faktor seperti suhu, kelembaban udara, luas bangunan, tingkat hunian, penggunaan HVAC dan pencahayaan, energi terbarukan, hari dalam seminggu, serta hari libur, sangat penting untuk mengoptimalkan penggunaan energi secara efisien [[1](https://ideas.repec.org/a/eee/energy/v32y2007i9p1761-1768.html)] [[2](https://www.sciencedirect.com/science/article/abs/pii/S0957582021004663)]. Kemampuan memprediksi konsumsi tentunya membantu sekali dalam rangka penghematan energi untuk tetap menjaga bumi.  
 
-Variasi dalam faktor-faktor ini dapat signifikan memengaruhi konsumsi energi, seperti suhu dan kelembaban yang mempengaruhi penggunaan HVAC dan pencahayaan, serta luas bangunan yang mempengaruhi kebutuhan energi secara keseluruhan [[3](https://jurnal.untan.ac.id/index.php/Elkha/article/download/3002/2961)] [[4](https://id.wikihow.com/Mencari-Luas))]. Selain itu, faktor-faktor seperti tingkat hunian, penggunaan energi terbarukan, hari dalam seminggu, dan hari libur juga berkontribusi pada fluktuasi dalam konsumsi energi [[5](https://publication.petra.ac.id/index.php/acesa/article/download/13450/11654)] [[6](https://scholarhub.ui.ac.id/cgi/viewcontent.cgi?article=1301&context=jepi)]. Oleh karena itu, dengan mempertimbangkan semua faktor ini yang juga tersedia pada *dataset*, dapat membantu untuk merencanakan penggunaan energi yang lebih efisien dan berkelanjutan dari melihat seberapa besar korelasi pengaruh faktor-faktor tersebut. 
+Variasi dalam faktor-faktor ini dapat signifikan memengaruhi konsumsi energi, seperti suhu dan kelembaban yang mempengaruhi penggunaan HVAC dan pencahayaan, serta luas bangunan yang mempengaruhi kebutuhan energi secara keseluruhan [[3](https://jurnal.untan.ac.id/index.php/Elkha/article/download/3002/2961)] [[4](https://www.sciencedirect.com/science/article/pii/S1674927814500135))]. Selain itu, faktor-faktor seperti tingkat hunian, penggunaan energi terbarukan, hari dalam seminggu, dan hari libur juga berkontribusi pada fluktuasi dalam konsumsi energi [[5](https://publication.petra.ac.id/index.php/acesa/article/download/13450/11654)] [[6](https://scholarhub.ui.ac.id/cgi/viewcontent.cgi?article=1301&context=jepi)]. Oleh karena itu, dengan mempertimbangkan semua faktor ini yang juga tersedia pada *dataset*, dapat membantu untuk merencanakan penggunaan energi yang lebih efisien dan berkelanjutan dari melihat seberapa besar korelasi pengaruh faktor-faktor tersebut. 
 
-Dalam membuat model regresi ada banyak cara algoritma yang bisa dipilih. Salah satu algoritma yang paling umum digunakan adalah regresi. Dengan menggunakan regresi dan memasukkan faktor-faktor dari rumah yang dituju diharapkan dapat memprediksi harga rumah yang dimaksud [[6](https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/download/2403/897/17458)] [[7](https://journal.eng.unila.ac.id/index.php/jitet/article/download/237/228)] [[8](https://ejournal.itn.ac.id/index.php/jati/article/download/8083/4796/)] [[9](https://ejurnal.its.ac.id/index.php/teknik/article/view/92329)] [[10](https://elektroda.uho.ac.id/index.php/journal/article/download/95/37)] [[11](https://jom.untidar.ac.id/index.php/dinamic/article/download/1428/669)].
+Dalam membuat model regresi ada banyak cara algoritma yang bisa dipilih. Salah satu algoritma yang paling umum digunakan adalah regresi. Dengan menggunakan regresi dan memasukkan faktor-faktor dari rumah yang dituju diharapkan dapat memprediksi harga rumah yang dimaksud [[7](https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/download/2403/897/17458)] [[8](https://journal.eng.unila.ac.id/index.php/jitet/article/download/237/228)] [[9](https://ejournal.itn.ac.id/index.php/jati/article/download/8083/4796/)] [[10](https://ejurnal.its.ac.id/index.php/teknik/article/view/92329)] [[11](https://elektroda.uho.ac.id/index.php/journal/article/download/95/37)] [[12](https://jom.untidar.ac.id/index.php/dinamic/article/download/1428/669)].
 
 ## Business Understanding
 
@@ -35,25 +35,25 @@ URL: https://www.kaggle.com/datasets/mrsimple07/energy-consumption-prediction/da
 
 Berikut merupakan detail dari *dataset* yang digunakan untuk pembuatan model:
 - Dataset berupa CSV
-- Dataset terdiri dari 1001 *records* dengan 11 buah fitur yang diukur.
-- Dataset terdiri dari 4 data kategori dan 7 data numerik.
+- Dataset terdiri dari 1000 *records* dengan 10 buah fitur yang diukur.
+- Dataset terdiri dari 4 data kategori dan 6 data numerik.
 - Dataset memiliki *missing value* sejumlah 0 records
 
 ### Variabel-variabel pada *dataset* adalah sebagai berikut:
-- Temperature : Suhu udara di lingkungan digunakan untuk memengaruhi kebutuhan pemanasan atau pendinginan, yang pada gilirannya mempengaruhi konsumsi energi HVAC (diukur dalam satuan angka)
-- Humidity : Kadar kelembaban udara, merupakan persentase dari kandungan uap air di udara. Berpengaruh pada kenyamanan termal dan kualitas udara dalam ruangan. (dalam satuan kelembaban)
-- Square Foot age : Luas area bangunan atau ruangan, digunakan untuk menentukan ukuran ruangan yang mempengaruhi kebutuhan energi untuk pemanasan, pendinginan, dan pencahayaan (dalam satuan luas)
+- Temperature : Suhu udara di lingkungan digunakan untuk memengaruhi kebutuhan pemanasan atau pendinginan, yang pada gilirannya mempengaruhi konsumsi energi (diukur dalam satuan serajat celcius)
+- Humidity : Kadar kelembaban udara, merupakan persentase dari kandungan uap air di udara. Berpengaruh pada kenyamanan termal dan kualitas udara dalam ruangan. (diukur dalam persentase)
+- Square Foot age : Luas area bangunan atau ruangan, digunakan untuk menentukan ukuran ruangan yang mempengaruhi kebutuhan energi untuk pemanasan, pendinginan, dan pencahayaan (dalam satuan luas persegi)
 - Occupancy : Jumlah orang yang hadir atau menggunakan bangunan pada waktu tertentu digunakan untuk menggambarkan beban internal yang mempengaruhi suhu dan kebutuhan ventilasi (dalam satuan orang)
 - HVAC Usage : Penggunaan sistem HVAC (Heating, Ventilation, and Air Conditioning), mengindikasikan seberapa sering sistem tersebut digunakan digunakan untuk menunjukkan tingkat penggunaan energi untuk pendinginan atau pemanasan ruangan (berupa kategori 'On', 'Off')
 - Lighting Usage : Penggunaan pencahayaan di dalam bangunan, dapat diukur dalam waktu penggunaan atau intensitas cahaya yang digunakan untuk memengaruhi konsumsi energi untuk pencahayaan ruangan (berupa kategori 'On', 'Off')
-- Renewable Energy : Energi yang dihasilkan dari sumber-sumber yang dapat diperbaharui, seperti tenaga surya atau angin digunakan untuk memberikan alternatif energi yang ramah lingkungan dan dapat mengurangi konsumsi energi dari sumber-sumber konvensional (dalam satuan energi)
+- Renewable Energy : Energi yang dihasilkan dari sumber-sumber yang dapat diperbaharui, seperti tenaga surya atau angin digunakan untuk memberikan alternatif energi yang ramah lingkungan dan dapat mengurangi konsumsi energi dari sumber-sumber konvensional (dalam persentase)
 - Day Of Week : Hari dalam seminggu, dimulai dari Minggu hingga Sabtu (Pola konsumsi energi dapat bervariasi berdasarkan hari dalam seminggu berupa kategori 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu')
 - Holiday : Hari libur atau hari khusus di mana aktivitas mungkin berbeda dari hari biasa digunakan untuk memengaruhi pola konsumsi energi karena perubahan dalam aktivitas dan kehadiran (berupa kategori 'Yes', 'No')
 - EnergyConsumption : Jumlah energi yang dikonsumsi oleh bangunan atau sistem pada waktu tertentu, yang digunakan untuk interaksi antara faktor-faktor di atas yang dapat diprediksi untuk perencanaan energi yang lebih efisien (dalam satuan energi)
 
 Untuk memahami data lebih lanjut, dilakukan Analisis Univariat dan Analisis Multivariat, serta Visualisasi Data.
 
-Analisis Univariat merupakan bentuk analisis data yang hanya merepresentasikan informasi yang terdapat pada satu variabel.  Jenis visualisasi ini umumnya digunakan untuk memberikan gambaran terkait distribusi sebuah variabel dalam suatu *dataset*. Sedangkan, Analisis Multivariat tmerupakan jenis analisis data yang terdapat dalam lebih dari dua variabel. Jenis visualisasi ini digunakan untuk merepresentasikan hubungan dan pola yang terdapat dalam multidimensional data. 
+Analisis Univariat merupakan bentuk analisis data yang hanya merepresentasikan informasi yang terdapat pada satu variabel.  Jenis visualisasi ini umumnya digunakan untuk memberikan gambaran terkait distribusi sebuah variabel dalam suatu *dataset*. Sedangkan, Analisis Multivariat merupakan jenis analisis data yang terdapat dalam lebih dari dua variabel. Jenis visualisasi ini digunakan untuk merepresentasikan hubungan dan pola yang terdapat dalam multidimensional data. 
 
 Selain melalui analisis, dilakukan juga Visualisasi Data. Memvisualisasikan data memberikan wawasan mendalam tentang perilaku berbagai fitur-fitur yang tersedia dalam *dataset*. 
 
@@ -69,16 +69,25 @@ Gambar 1a. Analisis Univariat (Data Kategori)
 
 Gambar 1b. Analisis Univariat (Data Numerik)
 
-Berdasarkan Gambar 1a , dapat dilihat bahwa distribusi data kategori untuk 'ocean_proximity' memiliki perbandingan jumlah yang tidak sama, untuk nilai data '<1H OCEAN' berjumlah 7607 dengan persentase 43.2% sedangkan nilai data 'ISLAND' hanya berjumlah 5. Lebih jauh, pada Gambar 1b, untuk data numerik memiliki karakteristik, yaitu:
-- koordinat longitude rumah mayoritas berada pada -118 derajat dan -122 derajat dan koordinat latitude rumah mayoritas berada pada 34 derajat dan 38 derajat
-- median dari umur rumah banyak terdistribusi pada rentang umur 10 - 40, namun nilai terbanyak terdapat pada nilai 50.
-- rata-rata terbanyak untuk data total room dan total bedroom yaitu di antara angka 1000-2000 room dan 200-400 bedroom.
-- rata-rata terbanyak untuk data population dan households berada di antara angka 500-1000 dan 200-400.
-- median income dan median house value terbanyak masing-masing berada di antara angka 3 dan 200000.
-- distribusi median house value miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.
+Berdasarkan Gambar 1a , dapat dilihat bahwa terdapat beberapa distribusi data kategori yaitu:
+1. 'HVACusage'
+   untuk 'HVACusage' memiliki perbandingan jumlah yang tidak sama, untuk nilai data 'Off' berjumlah 508 dengan persentase 50.8% sedangkan nilai data 'On' hanya berjumlah 492 dengan presentase 49.2%. Namun perbandingan ini juga tidak memiliki selisi yang signifikan. 
+2. 'LightingUsage'
+  untuk 'LightingUsage' memiliki perbandingan jumlah yang tidak sama, untuk nilai data 'Off' berjumlah 509 dengan persentase 50.9% sedangkan nilai data 'On' hanya berjumlah 491 dengan presentase 49.1%. Namun perbandingan ini juga tidak memiliki selisi yang signifikan.
+3. 'DayOfWeek'
+  untuk 'DayOfWeek' memiliki perbandingan jumlah yang tidak sama, untuk nilai data 'Friday' berjumlah 164 dengan persentase 16.4% sedangkan nilai data 'Monday' hanya berjumlah 123 dengan presentase 12.3%. Pada bagian ini selisih perbandingan cukup signifikan.
+4. 'Holiday'
+   untuk 'Holiday' memiliki perbandingan jumlah yang tidak sama, untuk nilai data 'yes' berjumlah 533 dengan persentase 53.3% sedangkan nilai data 'On' hanya berjumlah 467 dengan presentase 46.7%. Pada perbandingan ini juga memiliki selisi yang cukup signifikan.
+
+  Lebih jauh, pada Gambar 1b, untuk data numerik memiliki karakteristik, yaitu:
+- Temperatur untuk konsumsi energi mayoritas berada pada 2.5 derajat celcius dan 25 derajat celcius.
+- Humidity untuk konsumsi energi mayoritas berada pada 0.4% dan 0.3%
+- median dari Renewable Energy banyak terdistribusi pada rentang presentase 0-3 %, namun nilai terbanyak terdapat pada nilai 0.2%.
+- rata-rata terbanyak untuk data total SquareFootage yaitu di antara angka 1%-2%.
+- rata-rata terbanyak untuk data Occupansi berada di antara angka 6-8 orang
+- distribusi EnergyConsumption miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.
 
 ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/9b5422df-95b1-4762-a975-86f3ce0da66e) ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/fb01c423-3371-402e-a6d2-bd6e7471fe82) ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/e2c70522-5e6f-46a5-a63b-3ca3b90b967a) ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/6d667589-69fa-4276-bc07-e19aaf69d009)
-
 
 Gambar 2a. Analisis Multivariat (Data Kategori)
 
@@ -90,14 +99,28 @@ Gambar 2b. Analisis Multivariat (Data Numerik)
 
 Gambar 2c. Analisis Multivariat (Correlation Matrix)
 
-Pada Gambar 2a tampak persebaran data 'ocean proximity' terhadap 'median house value'. Dengan mengamati rata-rata 'median_house_value' relatif terhadap fitur kategori di atas, diperoleh insight sebagai berikut:
-- Pada fitur 'ocean_proximity', rata-rata 'median_house_value' cenderung bervariasi. Rentangnya berada antara 120000 hingga 400000.
-- Nilai 'median_house_value' tertinggi berada pada nilai 'ocean_proximity' yaitu 'ISLAND' dan nilai 'median_house_value' terendah berada pada nilai 'ocean_proximity' yaitu 'INLAND'. Sehingga, fitur 'ocean_proximity' memiliki pengaruh yang signifikan terhadap rata-rata 'median_house_value'.
-- Kesimpulan akhir, fitur kategori memiliki pengaruh terhadap fitur numerik 'median_house_value'.
+Pada Gambar 2a tampak persebaran data 'HVACUsage', 'LightingUsage', 'DayOfWeek', dan 'Holiday'  terhadap 'EnergrConsumption'. Dengan mengamati rata-rata 'EnergyConsumption' relatif terhadap fitur kategori di atas, diperoleh insight sebagai berikut:
+1. Pada fitur 'HVACUsage'
+- Rata-rata 'EnergyConsumption' hanya terdapat 2 bervariasi. Rentangnya berada antara lebih dari 7 hingga kurang dari 8.
+- Nilai 'EnergyConsumption' pada nilai 'HVACUsage' cukup setara karena hanya ada dua pilihan yaitu On dan Off dan nilai nya tidak terlihat perbedaannya secara signifikan. Namun, fitur 'HVACUsage' memiliki pengaruh yang signifikan terhadap rata-rata 'EnergyConsumption'.
 
-Pada Gambar 2b, dengan menggunakan fungsi pairplot dari library seaborn, tampak terlihat relasi pasangan dalam dataset. Dari gambar, terlihat plot relasi masing-masing fitur numerik pada dataset. Pada pola sebaran data grafik pairplot, terlihat bahwa 'median_income' memiliki korelasi dengan fitur 'median_house_value'. Sedangkan kedua fitur lainnya terlihat memiliki korelasi yang lemah karena sebarannya tidak membentuk pola
+2. Pada Fitur 'LightingUsage'
+- Rata-rata 'EnergyConsumption' hanya terdapat 2 bervariasi. Rentangnya berada antara lebih dari 7 hingga kurang dari 8.
+- Nilai 'EnergyConsumption' pada nilai 'LightingUsage' cukup setara karena hanya ada dua pilihan yaitu On dan Off dan nilai nya tidak terlihat perbedaannya secara signifikan. Namun, fitur 'LightingUsage' memiliki pengaruh yang signifikan terhadap rata-rata 'EnergyConsumption'.
 
-Terakhir, Gambar 2c merupakan Correlation Matrix menunjukkan hubungan antar fitur dalam nilai korelasi. Jika diamati, fitur 'median_income' memiliki skor korelasi yang cukup besar (0.63) dengan fitur target 'median_house_value'. Artinya, fitur 'median_house_value' berkorelasi cukup tinggi dengan keempat fitur tersebut. Sementara itu, fitur lainnya memiliki korelasi negatif sehingga fitur tersebut dapat dieliminasi.
+3. Pada Fitur 'DayOfWeek'
+- Rata-rata 'EnergyConsumption' cukup bervariasi senanyak Jumlah Hari. Rentangnya juga berada antara lebih dari 7 hingga kurang dari 8.
+- Nilai 'EnergyConsumption' tertinggi berada pada nilai 'DayOfWeek' yaitu 'Friday' dan nilai 'EnergyConsumption' terendah berada pada nilai 'DayOfWeek' yaitu 'Tuesday'. Sehingga, fitur 'DayOfWeek' juga memiliki pengaruh yang signifikan terhadap rata-rata 'EnergyConsumption'.
+
+4. Pada Fitur 'Holiday'
+- Rata-rata 'EnergyConsumption' hanya terdapat 2 bervariasi. Rentangnya berada antara lebih dari 7 hingga kurang dari 8.
+- Nilai 'EnergyConsumption' pada nilai 'LightingUsage' cukup setara karena hanya ada dua pilihan yaitu Yes dan No dan nilai nya tidak terlihat perbedaannya secara signifikan. Namun, fitur 'LightingUsage' juga memiliki pengaruh yang signifikan terhadap rata-rata 'EnergyConsumption'.
+
+*Kesimpulan akhir, fitur kategori memiliki pengaruh terhadap 'EnergyConsumption'.*
+
+Pada Gambar 2b, dengan menggunakan fungsi pairplot dari library seaborn, tampak terlihat relasi pasangan dalam dataset. Dari gambar, terlihat plot relasi masing-masing fitur numerik pada dataset. Pada pola sebaran data grafik pairplot sebelumnya, terlihat bahwa 'Temperature', 'Humidity', dan 'SquareFootage' memiliki korelasi dengan fitur 'EnergyConsumption'. Sedangkan kedua fitur lainnya terlihat memiliki korelasi yang lemah karena sebarannya tidak membentuk pola
+
+Terakhir, Gambar 2c merupakan Correlation Matrix menunjukkan hubungan antar fitur dalam nilai korelasi. Jika diamati, fitur 'Occupancy' memiliki skor korelasi yang cukup besar (0.04) dengan fitur target 'EnergyConsumption'. Artinya, fitur 'EnergyConsumption' berkorelasi cukup tinggi dengan kedua fitur tersebut. Sementara itu, fitur lainnya memiliki korelasi negatif sehingga, fitur tersebut dapat di-drop.
   
 ## Data Preparation
 Pada proses *Data Preparation* dilakukan kegiatan seperti *Data Gathering*, *Data Assessing*, dan *Data Cleaning*.
@@ -123,24 +146,24 @@ Q<sub>1</sub> adalah kuartil pertama dan Q<sub>3</sub> adalah kuartil ketiga.
 Dengan menggunakan metode IQR, dapat ditentukan *outlier* melalui suatu nilai batas yang ditentukan. Setelah menggunakan metode IQR dimana *dataset* yang sebelumnya berjumlah 20640 menjadi 17609.
  
 Semua proses ini diperlukan dalam rangka membuat model yang baik. 
-Untuk mereduksi jumlah fitur dilakukan proses PCA. Teknik reduksi ini adalah prosedur yang mengurangi jumlah fitur dengan tetap mempertahankan informasi pada data. PCA ini adalah teknik untuk mereduksi dimensi, mengekstraksi fitur, dan mentransformasi data dari “n-dimensional space” ke dalam sistem berkoordinat baru dengan dimensi m, di mana m lebih kecil dari n. Pada proyek ini, fitu 'housing_median_age',	'total_rooms',	'total_bedrooms',	'households' divisualisasikan untuk melihat hubungan di antara fitur-fitur tersebut. sperti yang terlihat pada Gambar 3 berikut.
+Untuk mereduksi jumlah fitur dilakukan proses PCA. Teknik reduksi ini adalah prosedur yang mengurangi jumlah fitur dengan tetap mempertahankan informasi pada data. PCA ini adalah teknik untuk mereduksi dimensi, mengekstraksi fitur, dan mentransformasi data dari “n-dimensional space” ke dalam sistem berkoordinat baru dengan dimensi m, di mana m lebih kecil dari n. Pada proyek ini, fitur 'Temperature', 'Humidity', 'Occupancy', 'RenewableEnergy' divisualisasikan untuk melihat hubungan di antara fitur-fitur tersebut. sperti yang terlihat pada Gambar 3 berikut.
 
 ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/d30e85da-cb2b-478e-8d4a-86ab6bb06221)
 
 Gambar 3 Visualisasi Hubungan antar Fitur sebelum Reduksi PCA
 
-Berdasarkan Gambar 3 dapat diketahui yang memiliki hubungan antar fitur hanya tiga yaitu 'total_rooms',	'total_bedrooms',	'households'. Selanjutnya, 3 fitur ini dapat direduksi dengan PCA. Sebelum itu, cek proporsi informasi dari ketiga komponen PCs tadi.
+Berdasarkan Gambar 3 dapat diketahui yang memiliki hubungan antar fitur hanya tiga yaitu  'Temperature', 'Humidity', 'RenewableEnergy'. Selanjutnya, 3 fitur ini dapat direduksi dengan PCA. Sebelum itu, cek proporsi informasi dari ketiga komponen PCs tadi.
 
 ```
 pca.explained_variance_ratio_.round(3)
 ```
 
-Potongan kode tersebut memberikan keluaran berupa array([0.985, 0.014, 0.001]). Berdasarkan hasil ini, yang dipertahankan adalah PC (komponen) pertama saja karena dari output yang dideroleh diketahui bahwa 98.5% informasi pada ketiga fitur 'total_rooms',	'total_bedrooms',	'households' terdapat pada PC pertama. Sedangkan sisanya, sebesar 1.4% dan 0.1% terdapat pada PC kedua dan ketiga. PC pertama ini akan menjadi fitur 'house properties' menggantikan ketiga fitur lainnya ('total_rooms',	'total_bedrooms',	'households').
+Potongan kode tersebut memberikan keluaran berupa array([0.602, 0.206, 0.192]). Berdasarkan hasil ini, yang dipertahankan adalah PC (komponen) pertama saja karena dari output yang dideroleh diketahui bahwa 60.2% informasi pada ketiga fitur 'Temperature', 'Humidity', 'RenewableEnergy' terdapat pada PC pertama. Sedangkan sisanya, sebesar 20.6% dan 19.2% terdapat pada PC kedua dan ketiga. PC pertama ini akan menjadi fitur 'energy properties' menggantikan ketiga fitur lainnya ('tTemperature', 'Humidity', 'RenewableEnergy').
 
 Setelah data dibersihkan, *dataset* dibagi menjadi data train dan data test untuk proses *Modeling*, dimana rasio pembagian data yang dipilih adalah 90:10 mengingat data test untuk rasio tersebut sudah terbilang cukup. 
 Adapun detail dari *dataset* tersebut adalah:
-- Total sampel di dalam *dataset* train: 15848
-- Total sampel di dalam *dataset* test: 1761
+- Total sampel di dalam *dataset* train: 900
+- Total sampel di dalam *dataset* test: 100
 
 ## Modeling
 Seperti yang dijelaskan di awal, model yang dipilih adalah model regresi karena merupakan salah satu algoritma yang paling umum digunakan dalam pembuatan model prediksi. Dalam bentuk yang sederhana, regresi terdiri dari intersep dan slope yang dituliskan dalam rumusan berikut
@@ -219,7 +242,7 @@ Tabel 1 berikut merupakan perbandingan 4 buah model yang coba dibandingkan
 
 Tabel 1. Perbandingan Performa MAE, MSE, dan R<sup>2</sup> Model
 
-Berdasarkan Tabel 1, secara umum Model 3 (RF1) dan Model 4 (RF2) menampilkan hasil performa yang lebih baik dimana masing-masing memiliki nilai R^2 yaitu sebesar -1.880080745581838 dan -2.432728538383974.
+Berdasarkan Tabel 1, secara umum Model 3 (RF1) dan Model 4 (RF2) menampilkan hasil performa yang lebih baik dimana masing-masing memiliki nilai R^2 yaitu sebesar -1.9107220495762078 dan -10.86085432086093.
 
 Secara lebih jauh perbandingan Model 1, 2, 3, dan 4 bisa dilihat pada Gambar 4 berikut.
 
@@ -237,14 +260,29 @@ Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi harga rum
 
 Tabel 2. Perbandingan Model
 
-Berdasarkan hasil evaluasi, terlihat bahwa prediksi harga rumah dengan *Random Forest* (RF), baik RF1 (tanpa tuning) ataupun RF2 (dengan tuning) memberikan hasil yang paling mendekati y_true, dimana nilai y_true yaitu 341700 dan nilai RF1 dan RF2 masing-masing yaitu 347466.0 dan 315645.2. Dengan demikian bisa disimpulkan bahwa model yang telah dikembangkan dapat memprediksi harga rumah dengan baik dengan menggunakan *Random Forest Regressor*.
+Berdasarkan hasil evaluasi, terlihat bahwa prediksi konsumsi energi dengan *Random Forest* (RF), baik RF1 (tanpa tuning) ataupun RF2 (dengan tuning) memberikan hasil yang paling mendekati y_true, dimana nilai y_true yaitu 341700 dan nilai RF1 dan RF2 masing-masing yaitu 347466.0 dan 315645.2. Dengan demikian bisa disimpulkan bahwa model yang telah dikembangkan dapat memprediksi harga rumah dengan baik dengan menggunakan *Random Forest Regressor*.
 
 ## Referensi:
-[1] Hassan, Mohammad Mujaheed & Ahmad, Nobaya & Hariza, Ahmad & Hashim, Ahmad. (2021). Factors Influencing Housing Purchase Decision. 11. 429-443. 10.6007/IJARBSS/v11-i7/10295.
-[2] Ariyawansa, Ranthilaka. (2009). Housing Market: A Review of Purchase Decision of Potential Buyers.
-[3] Jiang, Jiaxin & Zhang, Jin. (2021). Analysis of County Consumers’ Housing Purchase Intention and Influencing Factors. 
-[4] Heymann, Sommervoll. (2019). House prices and relative location
-[5] Jayasekare, Ajith & Herath, Shanaka & Wickramasuriya, Rohan & Perez, Pascal. (2019). The price of a view: Estimating the impact of view on house prices. Pacific Rim Property Research Journal. 25. 1-18. 10.1080/14445921.2019.1626543. 
-[6] Agarwal, Umang & Gupta, Smriti & Goyal, Madhav. (2022). House Price Prediction using Linear Regression. 10.13140/RG.2.2.11175.62887. 
-[7] Li, Xinshu. (2022). Prediction and Analysis of Housing Price Based on the Generalized Linear Regression Model. Computational Intelligence and Neuroscience. 2022. 1-9. 10.1155/2022/3590224. 
-[8] Zietz, Joachim & Zietz, Emily & Sirmans, G.. (2008). Determinants of House Prices: A Quantile Regression Approach. The Journal of Real Estate Finance and Economics. 37. 317-333. 10.1007/s11146-007-9053-7. 
+[1]	G. K. F. Tso and K. K. W. Yau, “Predicting electricity energy consumption: A comparison of regression analysis, decision tree and neural networks,” Energy, vol. 32, no. 9, pp. 1761–1768, 2007, doi: 10.1016/j.energy.2006.11.010.
+
+[2]	F. Bagherzadeh, A. S. Nouri, M. J. Mehrani, and S. Thennadil, “Prediction of energy consumption and evaluation of affecting factors in a full-scale WWTP using a machine learning approach,” Process Saf. Environ. Prot., vol. 154, pp. 458–466, 2021, doi: 10.1016/j.psep.2021.08.040.
+
+[3]	I. Syahrizal, S. Panjaitan, and Yandri, “Analisis Konsumsi Energi Listrik Pada Sistem Pengkondisian Udara Berdasarkan Variasi Kondisi Ruangan (Studi Kasus Di Politeknik Terpikat Sambas),” J. ELKHA, vol. 5, no. 1, pp. 1–7, 2013.
+
+[4]	Y. L. Hou, H. Z. Mu, G. T. Dong, and J. Shi, “Influences of urban temperature on the electricity consumption of Shanghai,” Adv. Clim. Chang. Res., vol. 5, no. 2, pp. 74–80, 2014, doi: 10.3724/SP.J.1248.2014.074.
+
+[5]	R. D. Setyowati and J. Raharjo, “Pengaruh Karakteristik Konsumsi Energi Terhadap Pencapaian Efisiensi Energi— Studi Kasus Di Perumahan Bulan Terang Utama Malang,” Adv. Civ. Eng. Sustain. Archit., vol. 5, no. 1, pp. 38–55, 2023, doi: 10.9744/acesa.v5i1.13450.
+
+[6]	M. Nazer and H. Handra, “Analisis Konsumsi Energi Rumah Tangga Perkotaan di Indonesia: Periode Tahun 2008 dan 2011,” J. Ekon. dan Pembang. Indones., vol. 16, no. 2, pp. 141–153, 2016, doi: 10.21002/jepi.v16i2.04.
+
+[7]	F. Febrianto, C. Dewi, and B. Rahayudi, “Pemodelan Regresi Linear Untuk Prediksi Konsumsi Energi Primer Indonesia Menggunakan Hybrid Particle Swarm Optimization Dan Continuous Ant Colony Optimization,” J. Pengemb. Teknol. Inf. dan Ilmu Komput. Univ. Brawijaya, vol. 2, no. 9, pp. 2760–2769, 2018.
+
+[8]	M. Syafruddin, L. Hakim, and D. Despa, “Metode Regresi Linier Untuk Prediksi Kebutuhan Energi Listrik Jangka Panjang (Studi Kasus Provinsi Lampung),” J. Inform. dan Tek. Elektro Terap., vol. 2, no. 2, 2014, doi: 10.23960/jitet.v2i2.237.
+
+[9]	T. Maulana, R. Astuti, and F. Muhammad Basysyar, “Implementasi Algoritma Regresi Linear Untuk Memprediksi Pendapatan Pt Pln Berdasarkan Penggunaan Per Kelompok Pelanggan,” JATI (Jurnal Mhs. Tek. Inform., vol. 7, no. 6, pp. 3196–3202, 2024, doi: 10.36040/jati.v7i6.8083.
+
+[10]	T. N. Faza and A. M. Navastara, “Faktor yang Memengaruhi Konsumsi Energi Listrik Rumah Tangga pada Masa Pandemi COVID-19 (Studi Kasus: Rusunawa di Jakarta Timur),” J. Tek. ITS, vol. 11, no. 2, 2022, doi: 10.12962/j23373539.v11i2.92329.
+
+[11]	N. Rahmadani, M. Musaruddin, M. Nadzirin, A. Nur, and H. T. Mokui, “Analisis Prakiraan Kebutuhan Energi Listrik di Kabupaten Kolaka Utara menggunakan Metode Dkl 3 . 2 , Regresi Linear dan Software Leap,” vol. 08, no. 02, pp. 101–109, 2023.
+
+[12]	Y. Afriyanti, H. Sasana, and G. Jalunggono, “Analisis Faktor-Faktor Yang Mempengaruhi Konsumsi Energi Terbarukan Di Indonesia,” Din. Dir. J. Econ., vol. 2, no. 3, pp. 865–884, 2018.
