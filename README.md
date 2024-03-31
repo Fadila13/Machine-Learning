@@ -40,7 +40,6 @@ Berikut merupakan detail dari *dataset* yang digunakan untuk pembuatan model:
 - Dataset memiliki *missing value* sejumlah 0 records
 
 ### Variabel-variabel pada *dataset* adalah sebagai berikut:
-- Timestamp : Waktu tertentu saat pengukuran dilakukan, biasanya dalam format tanggal dan jam untuk merekam kondisi pada saat itu digunakan untuk Berguna untuk memahami pola penggunaan energi sepanjang waktu dan memprediksi kebutuhan energi di masa depan (diukur dalam satuan detik)
 - Temperature : Suhu udara di lingkungan digunakan untuk memengaruhi kebutuhan pemanasan atau pendinginan, yang pada gilirannya mempengaruhi konsumsi energi HVAC (diukur dalam satuan angka)
 - Humidity : Kadar kelembaban udara, merupakan persentase dari kandungan uap air di udara. Berpengaruh pada kenyamanan termal dan kualitas udara dalam ruangan. (dalam satuan kelembaban)
 - Square Foot age : Luas area bangunan atau ruangan, digunakan untuk menentukan ukuran ruangan yang mempengaruhi kebutuhan energi untuk pemanasan, pendinginan, dan pencahayaan (dalam satuan luas)
