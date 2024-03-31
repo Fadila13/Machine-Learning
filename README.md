@@ -189,10 +189,15 @@ Parameter dengan nilai inilah yang kemudian dibuat sebagai model.
 
 ## Evaluation
 Adapun metrik yang sebagai alat ukur perfoma model yang dibuat antara lain **MSE · MAE · R<sup>2</sup>**. 
+
 Berikut merupakan rumus dari masing-masing metrik yang digunakan:
+
 $$ MAE = (1/n) Σ |y<sub>i</sub> - ŷ<sub>i</sub>| $$
+
 $$ MSE = (1/n) Σ (y<sub>i</sub> - ŷ<sub>i</sub>)<sup>2</sup> $$
+
 $$ R<sup>2</sup> = 1 - (MSE / Var(y)) $$
+
 y<sub>i</sub> mewakili nilai yang diamati,
 ŷ<sub>i</sub> mewakili nilai prediksi,
 n adalah jumlah titik data,
@@ -202,6 +207,7 @@ Berikut merupakan penjelasan kegunaan dari masing-masing metrik yang digunakan:
 - MAE menghitung rata-rata dari selisih absolut antara nilai prediksi dan nilai aktual. Semakin kecil nilai MAE, semakin baik kualitas model tersebut.
 - MSE menghitung rata-rata dari selisih kuadrat antara nilai prediksi dan nilai aktual. Semakin kecil nilai MSE, semakin baik kualitas model tersebut.
 - R<sup>2</sup> digunakan untuk menilai seberapa besar pengaruh variabel independen tertentu terhadap variabel dependen
+
 Tabel 1 berikut merupakan perbandingan 4 buah model yang coba dibandingkan
 	train	test
 	train	test
