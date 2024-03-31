@@ -77,11 +77,12 @@ Berdasarkan Gambar 1a , dapat dilihat bahwa distribusi data kategori untuk 'ocea
 - median income dan median house value terbanyak masing-masing berada di antara angka 3 dan 200000.
 - distribusi median house value miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.
 
-![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/e2c70522-5e6f-46a5-a63b-3ca3b90b967a)
+![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/9b5422df-95b1-4762-a975-86f3ce0da66e) ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/fb01c423-3371-402e-a6d2-bd6e7471fe82) ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/e2c70522-5e6f-46a5-a63b-3ca3b90b967a) ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/6d667589-69fa-4276-bc07-e19aaf69d009)
+
 
 Gambar 2a. Analisis Multivariat (Data Kategori)
 
-![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/044c7fc9-e3a4-4811-a57f-a9099b4d5710)
+ ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/044c7fc9-e3a4-4811-a57f-a9099b4d5710) 
 
 Gambar 2b. Analisis Multivariat (Data Numerik)
 
