@@ -61,11 +61,11 @@ Teknik visualisasi yang digunakan pada pembuatan model proyek ini adalah dengan 
 
 Berikut adalah hasil Exploratory Data Analysis (EDA), dimana Gambar 1 merupakan EDA Analisis Univariat dan Gambar 2 merupakan EDA Analisis Multivariat.
 
-![download (2)](https://github.com/ahmadsuaif/Proyek-Pertama-Predictive-Analytics/assets/66425290/97c7ccca-2ef8-4f02-aefa-e847c902dc25)
+(![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/856c40e4-5060-401d-ae66-ba29d9cdf3d5)) ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/951fb27a-0c5c-462e-92e4-e563f3890f20) ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/7fde54b5-54d5-4eb5-8b57-46de1a256d19) ![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/246b0a18-b0ca-4b4f-838d-807fd190608e)
 
 Gambar 1a. Analisis Univariat (Data Kategori)
 
-![download (3)](https://github.com/ahmadsuaif/Proyek-Pertama-Predictive-Analytics/assets/66425290/5e4ae928-6257-4694-a78f-b538141ffc9c)
+![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/beed0b8b-526e-4bc0-b43d-3aa65e268e3c)
 
 Gambar 1b. Analisis Univariat (Data Numerik)
 
@@ -77,15 +77,15 @@ Berdasarkan Gambar 1a , dapat dilihat bahwa distribusi data kategori untuk 'ocea
 - median income dan median house value terbanyak masing-masing berada di antara angka 3 dan 200000.
 - distribusi median house value miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.
 
-![download (4)](https://github.com/ahmadsuaif/Proyek-Pertama-Predictive-Analytics/assets/66425290/cc24f89a-96db-4b08-81d5-7828bddf6693)
+![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/e2c70522-5e6f-46a5-a63b-3ca3b90b967a)
 
 Gambar 2a. Analisis Multivariat (Data Kategori)
 
-![download (5)](https://github.com/ahmadsuaif/Proyek-Pertama-Predictive-Analytics/assets/66425290/ac954bef-c429-495b-be3d-5a0c99ae3d21)
+![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/044c7fc9-e3a4-4811-a57f-a9099b4d5710)
 
 Gambar 2b. Analisis Multivariat (Data Numerik)
 
-![download (6)](https://github.com/ahmadsuaif/Proyek-Pertama-Predictive-Analytics/assets/66425290/ea33a151-4229-484b-a59d-6225572bff5b)
+![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/81620a32-7f69-4409-8d9f-b60691ad6f10)
 
 Gambar 2c. Analisis Multivariat (Correlation Matrix)
 
@@ -124,7 +124,7 @@ Dengan menggunakan metode IQR, dapat ditentukan *outlier* melalui suatu nilai ba
 Semua proses ini diperlukan dalam rangka membuat model yang baik. 
 Untuk mereduksi jumlah fitur dilakukan proses PCA. Teknik reduksi ini adalah prosedur yang mengurangi jumlah fitur dengan tetap mempertahankan informasi pada data. PCA ini adalah teknik untuk mereduksi dimensi, mengekstraksi fitur, dan mentransformasi data dari “n-dimensional space” ke dalam sistem berkoordinat baru dengan dimensi m, di mana m lebih kecil dari n. Pada proyek ini, fitu 'housing_median_age',	'total_rooms',	'total_bedrooms',	'households' divisualisasikan untuk melihat hubungan di antara fitur-fitur tersebut. sperti yang terlihat pada Gambar 3 berikut.
 
-![download (7)](https://github.com/ahmadsuaif/Proyek-Pertama-Predictive-Analytics/assets/66425290/b05e92dd-398d-4932-9ad2-f75400ac1e26)
+![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/d30e85da-cb2b-478e-8d4a-86ab6bb06221)
 
 Gambar 3 Visualisasi Hubungan antar Fitur sebelum Reduksi PCA
 
@@ -178,10 +178,10 @@ params = {'n_estimators' : [50,80,100],
 Berdasarkan hasil pengujian, terpilih grid.best_params_ yaitu 
 
 ```
-{'max_depth': 10,
+{'max_depth': 3,
  'min_samples_leaf': 4,
  'min_samples_split': 2,
- 'n_estimators': 100}
+ 'n_estimators': 80}
 ```
 
 Parameter dengan nilai inilah yang kemudian dibuat sebagai model.
@@ -202,11 +202,13 @@ Berikut merupakan penjelasan kegunaan dari masing-masing metrik yang digunakan:
 - MSE menghitung rata-rata dari selisih kuadrat antara nilai prediksi dan nilai aktual. Semakin kecil nilai MSE, semakin baik kualitas model tersebut.
 - R<sup>2</sup> digunakan untuk menilai seberapa besar pengaruh variabel independen tertentu terhadap variabel dependen
 Tabel 1 berikut merupakan perbandingan 4 buah model yang coba dibandingkan
+	train	test
+	train	test
 |     |Model 1|Model 2|Model 3|Model 4|
 |---|---|---|---|---|
-|R<sup>2</sup>|-7504.309425109431|-7498.0783949337365.146779279|-1.880080745581838|2.432728538383974|
-|MSE|8166746.146779279|8163355.360001828|159980.5138016423|174656.3925179131|
-|MAE|6509173.648630178|6506404.9997212|133115.5655366269|154364.3230594773|
+|R<sup>2</sup>|-5.866891890416883e+30|-5.854037463450065e+30|-10.86085432086093|-1.9107220495762078|
+|MSE|6.240873331968297e+30|6.234032670639091e+30|8873589032742468.0|4395838143451591.0|
+|MAE|5.60355812900379e+30|5.597412179979567e+30|7729832889370363.0|3368259107818206.0|
 
 Tabel 1. Perbandingan Performa MAE, MSE, dan R<sup>2</sup> Model
 
@@ -214,7 +216,7 @@ Berdasarkan Tabel 1, secara umum Model 3 (RF1) dan Model 4 (RF2) menampilkan has
 
 Secara lebih jauh perbandingan Model 1, 2, 3, dan 4 bisa dilihat pada Gambar 4 berikut.
 
-![download (1)](https://github.com/ahmadsuaif/Proyek-Pertama-Predictive-Analytics/assets/66425290/a46a2fa1-d5c5-4371-a18f-409a84bb42da)
+![image](https://github.com/Fadila13/Machine-Learning/assets/162153177/709426d1-13db-4cd9-bcff-b38391698855)
 
 Gambar 4. Perbandingan Model berdasarkan Nilai Error (dalam 1e6)
 
@@ -224,7 +226,7 @@ Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi harga rum
 
 |     |y_true|prediksi_LR|prediksi_RR|prediksi_RF1|prediksi_RF2|
 |---|---|---|---|---|---|
-|15732|341700|218287.6|218309.3|347466.0|315645.2|
+|131|7.142759e+14|7.633840e+15|7.633540e+15|4.995583e+15|5.906515e+15|
 
 Tabel 2. Perbandingan Model
 
