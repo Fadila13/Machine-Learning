@@ -2,7 +2,7 @@
 
 ## Domain Proyek
 
-Konsumsi energi adalah jumlah energi yang digunakan oleh individu, rumah tangga, industri, atau negara untuk memenuhi kebutuhan mereka dalam melakukan berbagai aktivitas. Pertumbuhan konsumsi energi sering kali dikaitkan dengan pertumbuhan ekonomi, urbanisasi, dan perkembangan teknologi, tetapi juga berdampak pada lingkungan melalui emisi gas rumah kaca dan penggunaan sumber daya alam yang tidak terbarukan. Konsumsi energi sangat penting untuk merencanakan agar penggunaan sumber daya dapat dipakai secara efisien dan berkelanjutan. Selain itu, memperkirakan konsumsi energi juga membantu mengurangi dampak negatif terhadap lingkungan dengan mengurangi emisi gas rumah kaca dan meminimalkan eksploitasi sumber daya alam yang tidak terbarukan.  [[1](https://ideas.repec.org/a/eee/energy/v32y2007i9p1761-1768.html)] [[2](https://www.sciencedirect.com/science/article/abs/pii/S0957582021004663)]. Kemampuan memprediksi konsumsi tentunya membantu sekali dalam rangka penghematan energi untuk tetap menjaga bumi.  
+Konsumsi energi adalah jumlah energi yang digunakan oleh individu, rumah tangga, industri, atau negara untuk memenuhi suatu kebutuhan dalam melakukan berbagai aktivitas. Pertumbuhan konsumsi energi sering kali dikaitkan dengan pertumbuhan ekonomi, urbanisasi, dan perkembangan teknologi, tetapi juga berdampak pada lingkungan melalui emisi gas rumah kaca dan penggunaan sumber daya alam yang tidak terbarukan. Konsumsi energi sangat penting untuk merencanakan agar penggunaan sumber daya dapat dipakai secara efisien dan berkelanjutan. Selain itu, memperkirakan konsumsi energi juga membantu mengurangi dampak negatif terhadap lingkungan dengan mengurangi emisi gas rumah kaca dan meminimalkan eksploitasi sumber daya alam yang tidak terbarukan.  [[1](https://ideas.repec.org/a/eee/energy/v32y2007i9p1761-1768.html)] [[2](https://www.sciencedirect.com/science/article/abs/pii/S0957582021004663)]. Kemampuan memprediksi konsumsi tentunya membantu sekali dalam rangka penghematan energi untuk tetap menjaga bumi.  
 
 Prediksi konsumsi energi yang memperhitungkan berbagai faktor seperti suhu, kelembaban udara, luas bangunan, tingkat hunian, penggunaan HVAC dan pencahayaan, energi terbarukan, hari dalam seminggu, serta hari libur, sangat penting untuk mengoptimalkan penggunaan energi secara efisien [[3](https://jurnal.untan.ac.id/index.php/Elkha/article/download/3002/2961)] [[4](https://www.sciencedirect.com/science/article/pii/S1674927814500135))]. Selain itu, faktor-faktor seperti tingkat hunian, penggunaan energi terbarukan, hari dalam seminggu, dan hari libur juga berkontribusi pada fluktuasi dalam konsumsi energi [[5](https://publication.petra.ac.id/index.php/acesa/article/download/13450/11654)] [[6](https://scholarhub.ui.ac.id/cgi/viewcontent.cgi?article=1301&context=jepi)]. Oleh karena itu, dengan mempertimbangkan semua faktor ini yang juga tersedia pada *dataset*, dapat membantu untuk merencanakan penggunaan energi yang lebih efisien dan berkelanjutan dari melihat seberapa besar korelasi pengaruh faktor-faktor tersebut. 
 
@@ -19,7 +19,7 @@ Dalam hal ini pola konsumsi energi membantu untuk merencanakan penggunaan energi
 - Bagaimanna cara meningkatkan nilai perfoma model prediksi konsumsi energi
   
 ### Goals
-- Mengeksplorasi semua fitur yang tersedia pada *dataset* kemudian membuat melihat korelasi konsumsi dari semua fitur yang sedia untuk melihat faktor apa saja yang paling berpengaruh sampai paling kurang berpengaruh terhadap konsumsi energi
+- Mengeksplorasi semua fitur yang tersedia pada *dataset* kemudian membuat melihat korelasi energi dari semua fitur yang sedia untuk melihat faktor apa saja yang paling berpengaruh sampai paling kurang berpengaruh terhadap konsumsi energi
 - Melakukan proses *data wragling* dan *data preparation* terhadap *dataset* agar dapat dibuat model predksi konsumsi energi
 - Melakukan beberapa variasi model untuk mendapatkan model yang paling baik dari beberapa model yang telah dibuat untuk prediksi konsumsi energi
 
@@ -82,7 +82,7 @@ Berdasarkan Gambar 1a , dapat dilihat bahwa terdapat beberapa distribusi data ka
   Lebih jauh, pada Gambar 1b, untuk data numerik memiliki karakteristik, yaitu:
 - Temperatur untuk konsumsi energi mayoritas berada pada 2.5 derajat celcius dan 25 derajat celcius.
 - Humidity untuk konsumsi energi mayoritas berada pada 0.4% dan 0.3%
-- median dari Renewable Energy banyak terdistribusi pada rentang presentase 0-3 %, namun nilai terbanyak terdapat pada nilai 0.2%.
+- median dari Renewable Energy banyak terdistribusi pada rentang presentase 0%-3%, namun nilai terbanyak terdapat pada nilai 0.2%.
 - rata-rata terbanyak untuk data total SquareFootage yaitu di antara angka 1%-2%.
 - rata-rata terbanyak untuk data Occupansi berada di antara angka 6-8 orang
 - distribusi EnergyConsumption miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.
