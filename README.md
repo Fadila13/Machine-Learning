@@ -242,7 +242,7 @@ Tabel 1 berikut merupakan perbandingan 4 buah model yang coba dibandingkan
 
 Tabel 1. Perbandingan Performa MAE, MSE, dan R<sup>2</sup> Model
 
-Berdasarkan Tabel 1, secara umum Model 3 (RF1) dan Model 4 (RF2) menampilkan hasil performa yang lebih baik dimana masing-masing memiliki nilai R^2 yaitu sebesar -1.9107220495762078 dan -10.86085432086093.
+Berdasarkan Tabel 1, secara umum Model 1 (LR) dan Model 2 (RR) menampilkan hasil performa yang lebih baik dimana masing-masing memiliki nilai R^2 yaitu sebesar -5.866891890416883e+30 dan -5.854037463450065e+30.
 
 Secara lebih jauh perbandingan Model 1, 2, 3, dan 4 bisa dilihat pada Gambar 4 berikut.
 
@@ -250,9 +250,9 @@ Secara lebih jauh perbandingan Model 1, 2, 3, dan 4 bisa dilihat pada Gambar 4 b
 
 Gambar 4. Perbandingan Model berdasarkan Nilai Error (dalam 1e6)
 
-Berdasarkan Gambar 4 dapat terlihat bahwa nilai error train dan test dari Model 3 (RF1) dan Model 4 (RF2) jauh lebih baik dibandingkan model lainnya.
+Berdasarkan Gambar 4 dapat terlihat bahwa nilai error train dan test dari Model 1 (LR) dan Model 4 (RR) jauh lebih baik dibandingkan model lainnya.
 
-Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi harga rumah dari 4 buah model yang dibuat. Tabel 2 berikut merupakan hasil dari evaluasi model yang telah dibuat.
+Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi konsumsi energi dari 4 buah model yang dibuat. Tabel 2 berikut merupakan hasil dari evaluasi model yang telah dibuat.
 
 |     |y_true|prediksi_LR|prediksi_RR|prediksi_RF1|prediksi_RF2|
 |---|---|---|---|---|---|
@@ -260,7 +260,7 @@ Selain itu dilakukan perbandingan nilai y_true terhadap nilai prediksi harga rum
 
 Tabel 2. Perbandingan Model
 
-Berdasarkan hasil evaluasi, terlihat bahwa prediksi konsumsi energi dengan *Random Forest* (RF), baik RF1 (tanpa tuning) ataupun RF2 (dengan tuning) memberikan hasil yang paling mendekati y_true, dimana nilai y_true yaitu 341700 dan nilai RF1 dan RF2 masing-masing yaitu 347466.0 dan 315645.2. Dengan demikian bisa disimpulkan bahwa model yang telah dikembangkan dapat memprediksi harga rumah dengan baik dengan menggunakan *Random Forest Regressor*.
+Berdasarkan hasil evaluasi, terlihat bahwa prediksi konsumsi energi dengan LR (regresi linear) dan RR (ridge regresi) memberikan hasil yang paling mendekati y_true, dimana nilai y_true yaitu 7.142759e+14 dan nilai LR dan RR masing-masing yaitu 7.633840e+15 dan 7.633540e+15 Dengan demikian bisa disimpulkan bahwa model yang telah dikembangkan dapat memprediksi konsumsi energi dengan baik dengan menggunakan *regresi*.
 
 ## Referensi:
 [1]	G. K. F. Tso and K. K. W. Yau, “Predicting electricity energy consumption: A comparison of regression analysis, decision tree and neural networks,” Energy, vol. 32, no. 9, pp. 1761–1768, 2007, doi: 10.1016/j.energy.2006.11.010.
